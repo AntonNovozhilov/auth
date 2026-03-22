@@ -11,3 +11,4 @@ wheels/
 docs/
 .mypy_cache
 .python-version
+.env
