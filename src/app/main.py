@@ -11,7 +11,7 @@ from src.app.api.routers.login import (
 
 
 def create_app() -> FastAPI:
-    """Создает приложение"""
+    """Создает приложение."""
     app = FastAPI(
         title="Сервис для регистрации и авторизации пользователей",
         description="Сервис на FastAPI для регистрации и авторизации пользователей",
