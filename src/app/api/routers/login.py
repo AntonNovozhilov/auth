@@ -3,6 +3,7 @@ from src.app.schemas import (
     LoginRequest,
     MessageResponse,
 )
+from src.app.services.login_service import auth_to_account_user
 
 router = APIRouter()
 
@@ -12,4 +13,4 @@ def login(
     login_data: LoginRequest,
 ) -> MessageResponse:
     """Авторизация пользователя"""
-    return MessageResponse(message="login endpoint")
+    return auth_to_account_user(login_data)
